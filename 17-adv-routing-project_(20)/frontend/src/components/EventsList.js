@@ -1,37 +1,25 @@
-import { useEffect, useState } from 'react';
+import { Link } from "react-router-dom";
+import classes from "./EventsList.module.css";
 
-import EventsList from '../components/EventsList';
-
-function EventsPage() {
-  const [isLoading, setIsLoading] = useState(false);
-  const [fetchedEvents, setFetchedEvents] = useState();
-  const [error, setError] = useState();
-
-  useEffect(() => {
-    async function fetchEvents() {
-      setIsLoading(true);
-      const response = await fetch('http://localhost:8080/events');
-
-      if (!response.ok) {
-        setError('Fetching events failed.');
-      } else {
-        const resData = await response.json();
-        setFetchedEvents(resData.events);
-      }
-      setIsLoading(false);
-    }
-
-    fetchEvents();
-  }, []);
+function EventsList({ events }) {
   return (
-    <>
-      <div style={{ textAlign: 'center' }}>
-        {isLoading && <p>Loading...</p>}
-        {error && <p>{error}</p>}
-      </div>
-      {!isLoading && fetchedEvents && <EventsList events={fetchedEvents} />}
-    </>
+    <div className={classes.events}>
+      <h1>All Events</h1>
+      <ul className={classes.list}>
+        {events.map((event) => (
+          <li key={`/events/${event.id}`} className={classes.item}>
+            <Link to={event.id}>
+              <img src={event.image} alt={event.title} />
+              <div className={classes.content}>
+                <h2>{event.title}</h2>
+                <time>{event.date}</time>
+              </div>
+            </Link>
+          </li>
+        ))}
+      </ul>
+    </div>
   );
 }
 
-export default EventsPage;
+export default EventsList;
