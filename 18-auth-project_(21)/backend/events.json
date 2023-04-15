@@ -1,12 +1,1 @@
-{
-  "events": [
-    {
-      "title": "A new event",
-      "image": "https://cdn.muenchen-p.de/fl_progressive,q_65/.imaging/stk/responsive/teaser300/dms/va-2016/muenchner-christkindlmarkt/christkindlmarkt-marienplat-logo-hp/document/christkindlmarkt-marienplat-logo-hp.jpg",
-      "date": "2022-10-01",
-      "description": "Some awesome event!",
-      "id": "2a42fcc4-ea21-4bdd-abf6-c40006dc66a9"
-    }
-  ],
-  "users": []
-}
+{"events":[{"title":"test","image":"https://s3.amazonaws.com/eventbrite-s3/marketing/landingpages/assets/photography/distribution-header-footer.jpg","date":"2023-05-05","description":"jbslkjvbslirzdguivbaezrdk","id":"fbf800d0-bc2d-4040-aea0-554446885010"}],"users":[{"email":"test@test.com","password":"$2a$12$hHHBLXrozdsEGysFhRWvy.ieQqKrMiClUIaL3w96ya.K2N5hwZAje","id":"319384d3-7668-427e-aa71-2f53413250ea"},{"email":"test2@test.com","password":"$2a$12$/eZEHmKVAJaZDh/sqMB31O79kQEl2yiCjDzhuKJPhhXad0KRLI7xe","id":"9b1b3bf6-b54a-49a5-8af5-980e2dc08815"},{"email":"luizkama28@gmail.com","password":"$2a$12$fKUn3Mu2Qsdg3rtAOzM5z.HyyF6fzGVKRsL0KjZ8YmpCor/uMe/Si","id":"99949a6e-8eee-4e7b-9668-18d6008bcb3f"}]}
