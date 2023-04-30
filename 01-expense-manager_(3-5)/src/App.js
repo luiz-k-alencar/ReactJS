@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Expenses from "./components/Expenses/Expenses";
 import NewExpense from "./components/NewExpense/NewExpense";
 
@@ -31,6 +31,22 @@ const DUMMY_EXPENSES = [
 
 const App = () => {
   const [expenses, setExpenses] = useState(DUMMY_EXPENSES)
+
+  useEffect(() => {
+    const transformToObjects = (numberArray) => {
+      // // Todo: Add your logic
+      // // should return an array of objects
+      const newArray = [];
+      numberArray.map(number => newArray.push(
+        {
+          val: number
+        }
+      ))
+      return newArray
+    };
+
+    transformToObjects([1, 2, 3]);
+  }, []);
 
   const addExpenseHandler = expense => {
     setExpenses(prevExpenses => {
