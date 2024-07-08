@@ -20,28 +20,6 @@ This repository includes various projects and exercises covering a wide range of
 - State management with Redux
 - Advanced React patterns and optimization techniques
 
-## Project Structure
-
-Each folder within this repository corresponds to a different project or exercise. The structure is as follows:
-
-- **project1/**: Description of the first project.
-- **project2/**: Description of the second project.
-- **project3/**: Description of the third project.
-- **...**
-
-## How to Use
-
-To explore the projects, you can clone this repository and run the projects locally:
-
-```bash
-git clone https://github.com/luiz-k-alencar/ReactJS.git
-cd ReactJS/project1
-npm install
-npm start
-```
-
-Repeat the steps for other projects by navigating to the respective directories.
-
 ## Conclusion
 
 This repository is a testament to my learning journey in ReactJS. Feel free to explore the projects and use them as references for your own learning.
